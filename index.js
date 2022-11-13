@@ -231,7 +231,7 @@ async function modalMore(){
         for(let allData of data.MoreAboutMe){
 
             let datass = `<ul>
-             <img class= "imageDom" src="${allData.image}" alt="">
+             <img src="${allData.image}" class="imageDom" alt="profile bild">
             <li> ${allData.name }</li>
             <br>
             <li> ${allData.Adress }</li>
