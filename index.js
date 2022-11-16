@@ -212,7 +212,7 @@ toggle1.addEventListener('click', function () {
     }
     else {
         body.style.background = 'black';
-       
+
         body.style.transition = '2s'
     }
 })
@@ -222,23 +222,23 @@ const paragraph = document.querySelector('.moree');
 
 let urlMore = 'moreabout.json';
 
-async function modalMore(){
+async function modalMore() {
     let response = await fetch(urlMore);
-    let data= await response.json();
+    let data = await response.json();
 
-    if(response.ok){
+    if (response.ok) {
         console.log(data.MoreAboutMe)
-        for(let allData of data.MoreAboutMe){
+        for (let allData of data.MoreAboutMe) {
 
             let datass = `<ul>
              <img src="${allData.image}" class="imageDom" alt="profile bild">
-            <li> ${allData.name }</li>
+            <li> ${allData.name}</li>
             <br>
-            <li> ${allData.Adress }</li>
+            <li> ${allData.Adress}</li>
             <br>
-            <li> ${allData.phone }</li>
+            <li> ${allData.phone}</li>
             <br>
-            <li> ${allData.send } <div> <form action="">
+            <li> ${allData.send} <div> <form>
             <textarea class="form-container" placeholder="Type message.." name="msg" required></textarea>
         
             <button type="submit" class="btn-submit">Send</button>
@@ -250,7 +250,7 @@ async function modalMore(){
 
             paragraph.innerHTML += datass;
         }
-        
+
     }
 }
 modalMore();
@@ -279,5 +279,5 @@ window.addEventListener("click", windowOnClick);
 
 function openForm() {
     document.getElementById("myForm").style.display = "block";
-  }
-  
+}
+
