@@ -156,7 +156,7 @@ async function mycervice() {
 
     for (let serviceInfo3 of data.service3) {
         let outputTags3 = `<ul>
-    <li> <li> <h1 style = "text-align: center; border-bottom: 1px solid black;"> ${serviceInfo3.name}<h1></li>
+    <li> <h1 style = "text-align: center; border-bottom: 1px solid black;"> ${serviceInfo3.name}<h1></li>
     </ul>
     <ul class ="service-style">
     <li> ${serviceInfo3.name2}</li>
@@ -187,12 +187,12 @@ button1.onclick = () => {
         /* expand the boc */
 
         container.className = 'open';
-        button.innerHTML = 'Collapse now';
+        button1.innerHTML = 'Collapse now';
     }
     else {
         /* collaps the box */
         container.className = "";
-        button.innerHTML = 'Expand'
+        button1.innerHTML = 'Expand'
     }
 }
 
